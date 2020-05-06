@@ -1,14 +1,30 @@
 /* REGOLE GENERALI  */
 body {
-
+  padding-top: 67px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 section {
 
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
+font-weight: bold;
+}
 
+h2 {
+  text-align: center;
+}
+.ms_text-dark {
+  color: #0f1b4e;
+}
+.ms_text-white {
+  color: white;
+}
+
+p {
+  color: #aec9ff;
 }
 
 img {
@@ -60,18 +76,81 @@ a:hover {
   font-size: 25px;
 }
 /* Fine Navbar fixed */
+.ms_wrapper {
+  background-image: url(../img/bg-home-1-d54581d7.jpg);
+  padding: 50px 0;
+}
+
+.ms_wrapper .ms_account {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+
+.ms_wrapper .ms_account h2.ms_text-color {
+  color: #137eff;
+}
+
+.ms_wrapper .ms_account .ms_create input {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.ms_wrapper .ms_account .ms_btn {
+  font-weight: bold;
+}
+
+.ms_wrapper .ms_account .ms_btn:nth-of-type(2) {
+  color: #444444;
+}
+
+.ms_wrapper .ms_account p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.ms_wrapper .ms_account p a {
+  text-decoration: underline;
+}
+/* Jumbotron */
+
+/* Fine Jumbotron */
 /* FINE HEADER */
 
 
 
 /* MAIN */
 
-/* jumbotron */
-
-/* fine jumbotron */
-
 /* FINE MAIN */
 
 /* FOOTER */
 
 /* FINE FOOTER */
+@media screen and (min-width: 992px) {
+  .ms_wrapper .ms_title h1 {
+    font-size: 3.5em;
+  }
+
+  .ms_wrapper .ms_title p {
+    font-size: 1.7em;
+  }
+
+  .ms_wrapper .ms_account {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ms_wrapper .ms_title h1 {
+    font-size: 4.5em;
+  }
+
+  .ms_wrapper .ms_title p {
+    font-size: 1.6em;
+  }
+
+  .ms_wrapper .ms_account {
+    margin-left: 30px;
+  }
+}
