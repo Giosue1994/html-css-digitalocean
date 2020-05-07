@@ -23,7 +23,7 @@ h2 {
 }
 
 p {
-  color: #aec9ff;
+  color: #6a7a96;
 }
 
 img {
@@ -79,9 +79,15 @@ a:hover {
   font-size: 25px;
 }
 /* Fine Navbar fixed */
+
+/* Jumbotron */
 header .ms_wrapper {
   background-image: url(../img/bg-home-1-d54581d7.jpg);
   padding: 50px 0;
+}
+
+header .ms_wrapper .ms_title p {
+  color: #aec9ff;
 }
 
 header .ms_wrapper .ms_account {
@@ -116,6 +122,7 @@ header .ms_wrapper .ms_account p {
 header .ms_wrapper .ms_account p a {
   text-decoration: underline;
 }
+/* Fine Jumbotron */
 /* ________ FINE HEADER ________ */
 
 /* ________ MAIN ________ */
@@ -124,6 +131,16 @@ header .ms_wrapper .ms_account p a {
   background-color: #f3f5f9;
   padding: 40px 0;
 }
+
+.ms_first-section .ms_wrapper h4 {
+  color: #6a7a96;
+}
+
+.ms_first-section .ms_wrapper li {
+  width: calc(100%/6);
+  margin-right: -10px;
+}
+
 /* Fine Customer */
 
 /* Deploy */
@@ -149,6 +166,20 @@ header .ms_wrapper .ms_account p a {
 
 /* ________ FINE FOOTER ________ */
 
+@media screen and (max-width: 991px) {
+  /* Customer */
+  .ms_first-section .ms_wrapper li {
+    width: calc(100%/3);
+    margin-right: 50px;
+    margin-top: 20px;
+  }
+
+  .ms_first-section .ms_wrapper li:nth-of-type(2n+2) {
+    margin-left: 50px;
+    margin-right: 0;
+  }
+  /* Fine Customer */
+}
 
 @media screen and (min-width: 992px) {
   /* Jumbotron */
