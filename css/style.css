@@ -12,6 +12,9 @@ section {
 .ms_first-section {
   background-color: #f3f5f9;
 }
+.ms_second-section .row {
+  text-align: left;
+}
 .ms_second-section img {
   width: 40px;
   margin: 15px 0;
@@ -169,10 +172,6 @@ header .ms_wrapper .ms_account p a {
 /* Fine Customer */
 
 /* Deploy */
-.ms_deploy .row {
-  text-align: left;
-}
-
 .ms_deploy .ms_title p {
   margin-bottom: 50px;
 }
