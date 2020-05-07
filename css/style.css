@@ -1,4 +1,4 @@
-/* REGOLE GENERALI  */
+/* ________ REGOLE GENERALI ________*/
 body {
   padding-top: 67px;
   font-weight: bold;
@@ -6,13 +6,12 @@ body {
 }
 
 section {
-
+text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
 font-weight: bold;
 }
-
 h2 {
   text-align: center;
 }
@@ -32,12 +31,16 @@ img {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a:hover {
   text-decoration: none;
 }
-/* FINE REGOLE GENERALI  */
+/* ________ FINE REGOLE GENERALI ________*/
 
-/* HEADER */
+/* ________ HEADER ________ */
 /* Navbar fixed */
 .ms_nav-menu {
   background-color: white;
@@ -76,81 +79,105 @@ a:hover {
   font-size: 25px;
 }
 /* Fine Navbar fixed */
-.ms_wrapper {
+header .ms_wrapper {
   background-image: url(../img/bg-home-1-d54581d7.jpg);
   padding: 50px 0;
 }
 
-.ms_wrapper .ms_account {
+header .ms_wrapper .ms_account {
   background-color: white;
   border-radius: 5px;
   padding: 20px 15px;
 }
 
-.ms_wrapper .ms_account h2.ms_text-color {
+header .ms_wrapper .ms_account h2.ms_text-color {
   color: #137eff;
 }
 
-.ms_wrapper .ms_account .ms_create input {
+header .ms_wrapper .ms_account .ms_create input {
   width: 100%;
   margin: 5px 0;
 }
 
-.ms_wrapper .ms_account .ms_btn {
+header .ms_wrapper .ms_account .ms_btn {
   font-weight: bold;
 }
 
-.ms_wrapper .ms_account .ms_btn:nth-of-type(2) {
+header .ms_wrapper .ms_account .ms_btn:nth-of-type(2) {
   color: #444444;
 }
 
-.ms_wrapper .ms_account p {
+header .ms_wrapper .ms_account p {
   text-align: center;
   margin-top: 10px;
   font-size: 12px;
 }
 
-.ms_wrapper .ms_account p a {
+header .ms_wrapper .ms_account p a {
   text-decoration: underline;
 }
-/* Jumbotron */
+/* ________ FINE HEADER ________ */
 
-/* Fine Jumbotron */
-/* FINE HEADER */
+/* ________ MAIN ________ */
+/* Customer */
+.ms_first-section .ms_wrapper {
+  background-color: #f3f5f9;
+  padding: 40px 0;
+}
+/* Fine Customer */
+
+/* Deploy */
+/* Fine Deploy */
+
+/* Designed */
+/* Fine Designed */
+
+/* Features */
+/* Fine Features */
+
+/* Region */
+/* Fine Region */
+
+/* Development */
+/* Fine Development */
+
+/* Started */
+/* Fine Started */
+/* ________ FINE MAIN ________ */
+
+/* ________ FOOTER ________ */
+
+/* ________ FINE FOOTER ________ */
 
 
-
-/* MAIN */
-
-/* FINE MAIN */
-
-/* FOOTER */
-
-/* FINE FOOTER */
 @media screen and (min-width: 992px) {
-  .ms_wrapper .ms_title h1 {
+  /* Jumbotron */
+  header .ms_wrapper .ms_title h1 {
     font-size: 3.5em;
   }
 
-  .ms_wrapper .ms_title p {
+  header .ms_wrapper .ms_title p {
     font-size: 1.7em;
   }
 
-  .ms_wrapper .ms_account {
+  header .ms_wrapper .ms_account {
     margin-left: 20px;
   }
+  /* Fine Jumbotron */
 }
 
 @media screen and (min-width: 1200px) {
-  .ms_wrapper .ms_title h1 {
+  /* Jumbotron */
+  header .ms_wrapper .ms_title h1 {
     font-size: 4.5em;
   }
 
-  .ms_wrapper .ms_title p {
+  header .ms_wrapper .ms_title p {
     font-size: 1.6em;
   }
 
-  .ms_wrapper .ms_account {
+  header .ms_wrapper .ms_account {
     margin-left: 30px;
   }
+  /* Fine Jumbotron */
 }
