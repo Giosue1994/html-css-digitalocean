@@ -47,13 +47,9 @@ p {
   font-size: 1.5em;
 }
 
-img {
-  display: inline-block;
-  width: 100%;
-}
-
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a:hover {
@@ -69,7 +65,7 @@ a:hover {
   padding: 15px;
 }
 
-.ms_nav-menu .ms_logo {
+.ms_nav-menu .ms_logo img {
   width: 200px;
 }
 
@@ -172,6 +168,10 @@ header .ms_wrapper .ms_account p a {
   padding: 20px;
 }
 
+.ms_customer img {
+  width: 100%;
+}
+
 /* Fine Customer */
 
 /* Deploy */
@@ -236,10 +236,17 @@ header .ms_wrapper .ms_account p a {
   background-color: #0068ff;
 }
 
+/* designed */
 .ms_designed .ms_scroll {
   margin-top: 150px;
 }
 
+.ms_designed .ms_scroll img {
+  width: 100%;
+}
+/* fine designed */
+
+/* development */
 .ms_development .ms_angle {
   line-height: 11;
 }
@@ -261,6 +268,7 @@ header .ms_wrapper .ms_account p a {
 .ms_development .ms_rockerbox a {
   margin-top: 30px;
 }
+/* fine development */
 /* Fine Designed */ /* Fine Development */
 
 /* Region */
@@ -301,7 +309,32 @@ header .ms_wrapper .ms_account p a {
 /* ________ FINE MAIN ________ */
 
 /* ________ FOOTER ________ */
+footer {
+  background-color: #002150;
+  padding: 50px 0;
+  font-size: 16px;
+}
 
+footer img {
+  margin-bottom: 10px;;
+}
+
+footer i {
+  font-size: 25px;
+}
+
+footer p:first-of-type,
+footer a {
+  color: #a2acbc;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer ul li {
+  line-height: 1.8;
+}
 /* ________ FINE FOOTER ________ */
 
 @media screen and (max-width: 991px) {
