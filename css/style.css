@@ -5,6 +5,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Sezioni */
 section {
   padding: 50px 0;
   text-align: center;
@@ -22,7 +23,9 @@ section {
 .ms_third-section {
   background: linear-gradient(to top, #00209a 0%, #0048c6 100%);
 }
+/* Fine Sezioni */
 
+/*Testo*/
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
@@ -46,6 +49,7 @@ p {
 .ms_title p {
   font-size: 1.5em;
 }
+/*Fine Testo*/
 
 ul {
   list-style-type: none;
@@ -66,7 +70,7 @@ a:hover {
 }
 
 .ms_nav-menu .ms_logo img {
-  width: 200px;
+  width: 180px;
 }
 
 .ms_menu {
@@ -81,6 +85,9 @@ a:hover {
 .ms_menu li a {
   color: #0f2e5b;
 }
+.ms_menu li a:hover {
+  color: #0087ff;
+}
 
 .ms_menu .ms_btn {
   color: #0087ff;
@@ -88,6 +95,14 @@ a:hover {
   border: 1px solid #0087ff;
   border-radius: 5px;
   padding: 8px;
+}
+.ms_menu .ms_btn:hover {
+  background-color: #0087ff;
+  color: white;
+}
+.ms_menu .ms_btn:active {
+  background-color: #004786;
+  color: white;
 }
 
 .ms_nav-menu .ms_burger {
@@ -277,6 +292,9 @@ header .ms_wrapper .ms_account p a {
   color: #a0b7e3;
   margin-top: 10px;
 }
+.ms_region a:hover {
+  color: white;
+}
 
 .ms_region p.ms_text-white {
   color: white;
@@ -310,6 +328,7 @@ header .ms_wrapper .ms_account p a {
 
 /* ________ FOOTER ________ */
 footer {
+  position: relative;
   background-color: #002150;
   padding: 50px 0;
   font-size: 16px;
@@ -335,6 +354,58 @@ footer a:hover {
 footer ul li {
   line-height: 1.8;
 }
+
+/*Help*/
+.ms_help .ms_shark {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  background-color: #0068ff;
+  border-radius: 5px;
+}
+
+.ms_help .ms_shark span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  background-color: red;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 27px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.ms_help .ms_shark img {
+  width: 60px;
+  position: relative;
+  top: 5px;
+}
+
+.ms_help .ms_message {
+  position: absolute;
+  right: 120px;
+  bottom: 30px;
+  background-color: white;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+}
+
+.ms_help .ms_message p {
+  color: #0f1b4e;
+  font-size: 14px;
+  margin: 0;
+}
+
+.ms_help i {
+  position: absolute;
+  right: 112px;
+  bottom: 35px;
+  color: white;
+}
+/*Fine Help*/
 /* ________ FINE FOOTER ________ */
 
 @media screen and (max-width: 991px) {
