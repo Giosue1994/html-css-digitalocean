@@ -19,10 +19,8 @@ section {
   width: 40px;
   margin: 15px 0;
 }
-
-.container > p {
-  font-size: 20px;
-  font-weight: 500;
+.ms_third-section {
+  background: linear-gradient(to top, #00209a 0%, #0048c6 100%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,6 +38,10 @@ h2 {
 
 p {
   color: #6a7a96;
+}
+.container > p {
+  font-size: 20px;
+  font-weight: 500;
 }
 .ms_title p {
   font-size: 1.5em;
@@ -167,6 +169,7 @@ header .ms_wrapper .ms_account p a {
 .ms_customer li {
   width: calc(100%/6);
   margin-right: -10px;
+  padding: 20px;
 }
 
 /* Fine Customer */
@@ -179,13 +182,17 @@ header .ms_wrapper .ms_account p a {
 .ms_deploy .ms_ul-deploy {
   padding-left: 0;
   margin-bottom: 30px;
-  border-left: 2px solid lightgrey;
   font-size: 20px;
   line-height: 2.5;
 }
 
 .ms_deploy .ms_ul-deploy li {
-  padding: 0 10px;
+  padding: 0 20px;
+  border-left: 2px solid lightgrey;
+}
+
+.ms_deploy .ms_ul-deploy li:hover {
+  border-left: 2px solid blue;
 }
 
 .ms_deploy .ms_ul-deploy li a{
@@ -193,58 +200,103 @@ header .ms_wrapper .ms_account p a {
 }
 /* Fine Deploy */
 
-/* Designed */
-.ms_designed .ms_angle {
-  line-height: 12;
+/* Designed */ /* Development */
+.ms_first-section .ms_angle {
+  line-height: 6;
   margin: 0;
   padding: 0;
   font-size: 50px;
 }
 
-.ms_designed .ms_angle .fa-angle-left  {
+.ms_first-section .ms_angle .fa-angle-left  {
   color: rgba(15, 27, 78, 0.5);
   margin-right: -50px;
 }
 
-.ms_designed .ms_angle .fa-angle-right  {
+.ms_first-section .ms_angle .fa-angle-right  {
   margin-left: -50px;
 }
 
-.ms_designed img {
-  margin-top: 150px;
+.ms_first-section  img {
   margin-bottom: 20px;
 }
 
-.ms_designed .ms_scroll {
-  padding-bottom: -50px;
-}
-
-.ms_designed .ms_little-ball {
+.ms_first-section .ms_little-ball {
   margin-top: 50px;
 }
 
-.ms_designed li {
+.ms_first-section li.hosonno {
   content: "";
   height: 12px;
   border: 1px solid #0068ff;
   border-radius: 50%;
 }
 
-.ms_designed li:first-child {
+.ms_first-section li.hosonno:first-child {
   background-color: #0068ff;
 }
-/* Fine Designed */
 
-/* Features */
-/* Fine Features */
+.ms_designed .ms_scroll {
+  margin-top: 150px;
+}
+
+.ms_development .ms_angle {
+  line-height: 11;
+}
+
+.ms_development .ms_rockerbox {
+  background-color: white;
+  padding: 40px 0;
+  margin-top: 100px;
+}
+
+.ms_development .ms_rockerbox img {
+  width: 300px;
+}
+
+.ms_development .ms_rockerbox p:first-of-type {
+  font-size: 20px;
+}
+
+.ms_development .ms_rockerbox a {
+  margin-top: 30px;
+}
+/* Fine Designed */ /* Fine Development */
 
 /* Region */
+.ms_region p,
+.ms_region a {
+  color: #a0b7e3;
+  margin-top: 10px;
+}
+
+.ms_region p.ms_text-white {
+  color: white;
+}
+
+.ms_region .row.ms_border-bottom {
+  border-bottom: 1px solid white;
+  margin: 1px;
+}
+
+.ms_region .row.ms_border-bottom:first-of-type {
+  margin-top: 20px;
+}
+
+.ms_region .row.ms_border-bottom:last-of-type {
+  border: none;
+}
 /* Fine Region */
 
-/* Development */
-/* Fine Development */
-
 /* Started */
+.ms_started .ms_btn {
+  font-weight: 500;
+  color: #0068ff;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 30px;
+}
 /* Fine Started */
 /* ________ FINE MAIN ________ */
 
@@ -258,6 +310,7 @@ header .ms_wrapper .ms_account p a {
     width: calc(100%/3);
     margin-right: 50px;
     margin-top: 20px;
+    padding: 0;
   }
 
   .ms_customer li:nth-of-type(2n+2) {
@@ -281,6 +334,7 @@ header .ms_wrapper .ms_account p a {
     margin-left: 20px;
   }
   /* Fine Jumbotron */
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -294,9 +348,18 @@ header .ms_wrapper .ms_account p a {
   }
   /* Fine Jumbotron */
 
-  /* Designed */
-  .ms_designed .ms_angle {
-    line-height: 13;
+  /* Designed */  /* Development */
+  .ms_first-section .ms_angle {
+    line-height: 7;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
   }
-  /* Fine Designed */
+
+  .ms_development .ms_angle {
+    line-height: 10.5;
+  }
+  /* Fine Designed */ /* Fine Development */
+
+
 }
